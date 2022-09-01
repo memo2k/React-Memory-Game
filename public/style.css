@@ -1,0 +1,145 @@
+/* ----------------------------------------------------------------- */
+/* Reset */
+/* ----------------------------------------------------------------- */
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* ----------------------------------------------------------------- */
+/* Base */
+/* ----------------------------------------------------------------- */
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    background-color: #003e4d;
+    text-align: center;
+}
+
+h1 {
+    color: rgb(246, 255, 150);
+    font-size: 60px;
+}
+
+/* ----------------------------------------------------------------- */
+/* Shell */
+/* ----------------------------------------------------------------- */
+.shell {
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 20px;
+}
+
+/* ----------------------------------------------------------------- */
+/* Wrapper */
+/* ----------------------------------------------------------------- */
+
+.wrapper {
+    margin-top: 100px;
+}
+
+/* ----------------------------------------------------------------- */
+/* Title */
+/* ----------------------------------------------------------------- */
+
+.title {
+    margin-bottom: 20px;
+}
+
+/* ----------------------------------------------------------------- */
+/* Actions */
+/* ----------------------------------------------------------------- */
+
+.actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 240px;
+}
+
+.actions p {
+    font-size: 25px;
+    color: rgb(246, 255, 150);
+}
+
+/* ----------------------------------------------------------------- */
+/* Buttons */
+/* ----------------------------------------------------------------- */
+
+
+.btn {
+    color: #fff;
+    text-decoration: none;
+    width: 130px;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid rgb(246, 255, 150);
+    font-size: 18px;
+}
+
+.btn--transparent {
+    background-color: transparent;
+    transition: .2s;
+}
+
+.btn--transparent:hover {
+    transition: .2s;
+    background-color: rgb(246, 255, 150);
+    color: #000;
+}
+
+/* ----------------------------------------------------------------- */
+/* Grid */
+/* ----------------------------------------------------------------- */
+
+.grid {
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+/* ----------------------------------------------------------------- */
+/* Card */
+/* ----------------------------------------------------------------- */
+
+.card {
+    position: relative;
+}
+
+.card img {
+    display: block;
+    object-fit: cover;
+    border: 2px solid rgb(246, 255, 150);
+    border-radius: 10px;
+}
+
+.card .card__front {
+    transform: rotateY(90deg);
+    transition: all ease-in .2s;
+    position: absolute;
+}
+
+.flipped .card__front {
+    transform: rotateY(0deg);
+    transition-delay: .2s;
+}
+
+.card .card__cover {
+    transition: all ease-in .2s;
+    transition-delay: .2s;
+}
+
+.flipped .card__cover {
+    transform: rotateY(90deg);
+    transition-delay: 0s;
+}
