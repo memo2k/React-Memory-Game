@@ -31,7 +31,7 @@ function App() {
   }
 
   const handleCard = (card) => {
-    cardOne ? setCardTwo(card) : setCardOne(card);
+    cardOne && cardOne !== card ? setCardTwo(card) : setCardOne(card);
   }
 
   useEffect(() => {
